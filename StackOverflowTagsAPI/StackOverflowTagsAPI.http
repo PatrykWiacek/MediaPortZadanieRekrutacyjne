@@ -1,6 +1,14 @@
-@StackOverflowTagsAPI_HostAddress = http://localhost:5199
+@StackOverflowTagsAPI_HostAddress = https://localhost:7238
 
-GET {{StackOverflowTagsAPI_HostAddress}}/weatherforecast/
+GET {{StackOverflowTagsAPI_HostAddress}}/Tags/all
 Accept: application/json
+Accept: text/plain
+
+###
+
+
+GET {{StackOverflowTagsAPI_HostAddress}}/Tags/paged?page=1&pageSize=10&sortBy=Name&sortAscending=true
+Accept: application/json
+Accept: text/plain
 
 ###
