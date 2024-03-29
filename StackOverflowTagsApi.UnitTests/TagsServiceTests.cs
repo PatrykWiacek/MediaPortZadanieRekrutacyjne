@@ -12,23 +12,12 @@ namespace StackOverflowTagsApi.UnitTests
         [Fact]
         public async void GetAllTags_ReturnsNonEmptyList()
         {
+            // Arrange
             var loggerMock = new Mock<ILogger<TagsService>>();
             var logger = loggerMock.Object;
-            var connection = new SQLiteConnection("DataSource=:memory:");
-            connection.Open();
-
-            var createTableCommand = connection.CreateCommand();
-            createTableCommand.CommandText = @"
-             CREATE TABLE Tags (
-                 Name TEXT NOT NULL,
-                 Count INT NOT NULL,
-                 PercentCount REAL NOT NULL
-             );"; 
-            createTableCommand.ExecuteNonQuery();
-            // Arrange
-            HttpClientHelper.InitializeClient();
+            var connection = new SQLiteConnection("DataSource=LocalDB.db");
             var tagsService = new TagsService(logger, connection);
-            await tagsService.GetTagsFromStackOverflowApi();
+            
             // Act
             var tags = tagsService.GetAllTags().Result;
 
