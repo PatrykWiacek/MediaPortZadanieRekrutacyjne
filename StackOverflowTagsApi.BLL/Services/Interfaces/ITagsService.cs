@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using StackOverflowTagsApi.BLL.Models;
+﻿using StackOverflowTagsApi.BLL.Models;
 
 namespace StackOverflowTagsApi.BLL.Services.Interfaces
 {

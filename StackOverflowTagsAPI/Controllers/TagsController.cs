@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using StackOverflowTagsApi.BLL.Models;
 using StackOverflowTagsApi.BLL.Services.Interfaces;
-using System.Xml.Linq;
 
 namespace StackOverflowTagsAPI.Controllers
 {
