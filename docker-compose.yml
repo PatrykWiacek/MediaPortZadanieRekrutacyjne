@@ -1,10 +1,11 @@
-﻿services:
-  stackoverflowtagsapi:
-    image: stackoverflowtagsapi
-    build:
-      context: .
-      dockerfile: StackOverflowTagsAPI/Dockerfile
+version: '3.4'
 
+services:
+  stackoverflowtagsapi:
+    image: ${DOCKER_REGISTRY-}stackoverflowtagsapi
+    build:
+      context: StackOverflowTagsAPI
+      dockerfile: Dockerfile
     ports:
       - "5000:5000"
       - "5001:5001"
