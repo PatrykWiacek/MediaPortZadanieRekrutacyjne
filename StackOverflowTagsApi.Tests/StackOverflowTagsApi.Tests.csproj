@@ -10,18 +10,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="testhost.deps.json" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="testhost.deps.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </Content>
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="coverlet.collector" Version="6.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="8.0.3" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
@@ -32,6 +20,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\StackOverflowTagsApi.BLL\StackOverflowTagsApi.BLL.csproj" />
+    <ProjectReference Include="..\StackOverflowTagsAPI\StackOverflowTagsAPI.csproj" />
   </ItemGroup>
 
   <ItemGroup>

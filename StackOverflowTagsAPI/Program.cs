@@ -43,3 +43,4 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run($"https://localhost:{app.Services.GetRequiredService<IOptions<AppSettings>>().Value.PortForAppHost}");
+public partial class Program { }
