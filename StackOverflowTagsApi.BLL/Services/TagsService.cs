@@ -90,7 +90,7 @@ namespace StackOverflowTagsApi.BLL.Services
             return tags;
         }
 
-        private async Task AddTagsToDatabase(List<Tag> tags)
+        public async Task AddTagsToDatabase(List<Tag> tags)
         {
 
             if (tags == null || !tags.Any())
@@ -129,7 +129,7 @@ namespace StackOverflowTagsApi.BLL.Services
             }
         }
 
-        private double CalculateTagPercentages(int totalCount, int tagCount)
+        public double CalculateTagPercentages(int totalCount, int tagCount)
         {
             double percentage = (double)tagCount / totalCount * 100;
             return Math.Round(percentage, 2);
