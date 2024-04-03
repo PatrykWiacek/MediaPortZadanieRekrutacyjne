@@ -1,0 +1,6 @@
+﻿services:
+  stackoverflowtagsapi:
+    image: stackoverflowtagsapi
+    build:
+      context: .
+      dockerfile: StackOverflowTagsAPI/Dockerfile
