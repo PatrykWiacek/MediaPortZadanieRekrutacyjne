@@ -6,7 +6,7 @@ using StackOverflowTagsApi.BLL.Helpers;
 using StackOverflowTagsApi.BLL.Models;
 using StackOverflowTagsApi.BLL.Services;
 
-namespace StackOverflowTagsApi.UnitTests
+namespace StackOverflowTagsApi.Tests
 {
     public class TagsServiceTests
     {
@@ -18,7 +18,7 @@ namespace StackOverflowTagsApi.UnitTests
             var logger = loggerMock.Object;
             var connection = new SQLiteConnection("DataSource=LocalDB.db");
             var tagsService = new TagsService(logger, connection);
-            
+
             // Act
             var tags = tagsService.GetAllTags().Result;
 
