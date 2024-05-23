@@ -20,7 +20,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\StackOverflowTagsApi.BLL\StackOverflowTagsApi.BLL.csproj" />
-    <ProjectReference Include="..\StackOverflowTagsAPI\StackOverflowTagsAPI.csproj" />
+    <ProjectReference Include="..\StackOverflowTagsAPI\StackOverflowTagsApi.csproj" />
   </ItemGroup>
 
   <ItemGroup>
