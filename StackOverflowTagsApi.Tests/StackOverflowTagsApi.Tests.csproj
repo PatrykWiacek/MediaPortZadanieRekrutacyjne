@@ -19,8 +19,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\StackOverflowTagsApi.BLL\StackOverflowTagsApi.BLL.csproj" />
-    <ProjectReference Include="..\StackOverflowTagsAPI\StackOverflowTagsApi.csproj" />
+    <ProjectReference Include="..\StackOverflowTagsApi.BLL\Biblio.csproj" />
+    <ProjectReference Include="..\StackOverflowTagsAPI\Apka.csproj" />
   </ItemGroup>
 
   <ItemGroup>

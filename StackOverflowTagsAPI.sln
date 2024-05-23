@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StackOverflowTagsApi", "StackOverflowTagsAPI\StackOverflowTagsApi.csproj", "{BD58E313-5D48-44D4-B45E-9572BE531BEE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Apka", "StackOverflowTagsAPI\Apka.csproj", "{BD58E313-5D48-44D4-B45E-9572BE531BEE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StackOverflowTagsApi.BLL", "StackOverflowTagsApi.BLL\StackOverflowTagsApi.BLL.csproj", "{D9BF2EA4-474D-4544-8397-8D5A8D88810C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Biblio", "StackOverflowTagsApi.BLL\Biblio.csproj", "{D9BF2EA4-474D-4544-8397-8D5A8D88810C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StackOverflowTagsApi.Tests", "StackOverflowTagsApi.Tests\StackOverflowTagsApi.Tests.csproj", "{2B319797-D206-49A9-9574-F1D1841A0151}"
 EndProject
