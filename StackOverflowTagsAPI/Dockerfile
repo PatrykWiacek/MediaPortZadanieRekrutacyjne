@@ -7,18 +7,18 @@ EXPOSE 5001
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["StackOverflowTagsAPI/StackOverflowTagsAPI.csproj", "StackOverflowTagsAPI/"]
+COPY ["StackOverflowTagsApi/StackOverflowTagsApi.csproj", "StackOverflowTagsApi/"]
 COPY ["StackOverflowTagsApi.BLL/StackOverflowTagsApi.BLL.csproj", "StackOverflowTagsApi.BLL/"]
-RUN dotnet restore "StackOverflowTagsAPI/StackOverflowTagsAPI.csproj"
+RUN dotnet restore "StackOverflowTagsApi/StackOverflowTagsApi.csproj"
 COPY . .
-WORKDIR "/src/StackOverflowTagsAPI"
-RUN dotnet build "StackOverflowTagsAPI.csproj" -c $BUILD_CONFIGURATION -o /app/build
+WORKDIR "/src/StackOverflowTagsApi"
+RUN dotnet build "StackOverflowTagsApi.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "StackOverflowTagsAPI.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "StackOverflowTagsApi.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "StackOverflowTagsAPI.dll"]
+ENTRYPOINT ["dotnet", "StackOverflowTagsApi.dll"]
