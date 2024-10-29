@@ -19,6 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Biblio\Biblio.csproj" />
     <ProjectReference Include="..\StackOverflowTagsApi.BLL\Biblio.csproj" />
     <ProjectReference Include="..\StackOverflowTagsAPI\Apka.csproj" />
   </ItemGroup>

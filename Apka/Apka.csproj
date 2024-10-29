@@ -21,6 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Biblio\Biblio.csproj" />
     <ProjectReference Include="..\StackOverflowTagsApi.BLL\Biblio.csproj" />
   </ItemGroup>
 
@@ -34,12 +35,6 @@
     <ContainerEnvironmentVariable Include="ASPNETCORE_HTTPS_PORTS">
       <Value>8081</Value>
     </ContainerEnvironmentVariable>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="..\.dockerignore">
-      <Link>.dockerignore</Link>
-    </Content>
   </ItemGroup>
 
 </Project>
