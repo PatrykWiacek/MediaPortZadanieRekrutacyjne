@@ -1,0 +1,18 @@
+﻿version: '3.8'
+
+services:
+  apka:
+    build:
+      context: .
+      dockerfile: Apka/Dockerfile
+    ports:
+      - "5000:8080"
+      - "5001:8081"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

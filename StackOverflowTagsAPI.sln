@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StackOverflowTagsApi.Tests", "StackOverflowTagsApi.Tests\StackOverflowTagsApi.Tests.csproj", "{2B319797-D206-49A9-9574-F1D1841A0151}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D137E70E-99D1-4D4E-BCC6-53772EF4167B}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Biblio", "Biblio\Biblio.csproj", "{F7FC5D1D-81AD-4AA5-AA76-C055C3D082E5}"
 EndProject
